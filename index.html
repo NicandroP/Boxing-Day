@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Stencil&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="script.js"></script>
+  <div class="container-fluid">
+
+    <div style="margin-top: 20px;" class="row">
+      <div class="col"></div>
+      <div class="col-md-5">
+        <div class="col text-center">
+          <p class="stencil-font">Box<img src="peroni.png" alt="Immagine" style="vertical-align: middle; width: 35px;vertical-align: -2px;">ng Day</p>
+        </div>
+      </div>
+      <div  class="col"></div>
+    </div>
+
+
+    <div style="margin-top:15px;" class="row flex-wrap">
+      <div class="col"></div>
+      <div class="col text-center">
+        <div class="d-flex justify-content-center flex-md-row">
+          <button type="button" onclick="changeImage('primaedizione.JPG')" class="btn btn-custom btn-lg mb-2 mb-md-0 mr-md-2" style="max-width: 200px;">
+            <span style="white-space: nowrap;">Prima Edizione</span>
+            <span style="font-size: 50%;">26 Dicembre 2023</span>
+          </button>
+          <button type="button" onclick="changeImage('barile.jpeg')" class="btn btn-custom btn-lg" style="max-width: 200px;" >
+            <span style="white-space: nowrap;">Seconda Edizione</span>
+            <span style="font-size: 50%;">30 Marzo 2024</span>
+          </button>
+        </div>
+      </div>
+      <div  class="col"></div>
+    </div>
+
+    <div class ="row" style="margin-top: 15px; margin-bottom: 15px;">
+      <div class="col"></div>
+      <div class="col-5">
+        <img id="selectedImage" class="img-fluid">
+      </div>
+      <div class="col"></div>
+    </div>
+
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.btn-custom {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-custom span {
+  font-size: 0.8rem;
+}
+
+.stencil-font {
+  font-family: 'Stencil', sans-serif;
+  font-size: 44px;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .stencil-font img {
+    width: 25px;
+  }
+}
