@@ -11,7 +11,7 @@
   <script src="script.js"></script>
   <div class="container-fluid">
 
-    <div style="margin-top: 20px;" class="row">
+    <div style="margin-top: 10px;" class="row">
       <div class="col"></div>
       <div class="col-md-5">
         <div class="col text-center">
@@ -22,15 +22,15 @@
     </div>
 
 
-    <div style="margin-top:15px;" class="row flex-wrap">
+    <div style="margin-top:10px;" class="row flex-wrap">
       <div class="col"></div>
       <div class="col text-center">
         <div class="d-flex justify-content-center flex-md-row">
-          <button type="button" onclick="changeImage('primaedizione.JPG')" class="btn btn-custom btn-lg mb-2 mb-md-0 mr-md-2" style="max-width: 200px;">
+          <button id="firstButton" type="button" onclick="changeSection('rowWrapper1')" class="btn btn-custom btn-lg mb-2 mb-md-0 mr-md-2" style="max-width: 200px;">
             <span style="white-space: nowrap;">Prima Edizione</span>
             <span style="font-size: 50%;">26 Dicembre 2023</span>
           </button>
-          <button type="button" onclick="changeImage('barile.jpeg')" class="btn btn-custom btn-lg" style="max-width: 200px;" >
+          <button id="secondButton" type="button" onclick="changeSection('rowWrapper2')" class="btn btn-custom btn-lg mb-2 mb-md-0 mr-md-2" style="max-width: 200px;" >
             <span style="white-space: nowrap;">Seconda Edizione</span>
             <span style="font-size: 50%;">30 Marzo 2024</span>
           </button>
@@ -39,12 +39,105 @@
       <div  class="col"></div>
     </div>
 
-    <div class ="row" style="margin-top: 15px; margin-bottom: 15px;">
-      <div class="col"></div>
-      <div class="col-5">
-        <img id="selectedImage" class="img-fluid">
+    <div id="rowWrapper1" style="display: none;">
+      <div class ="row" style="margin-top: 15px; margin-bottom: 15px;">
+        <div class="col"></div>
+        <div class="col-6">
+          <div class="risultato-partita">
+            <div class="dettagli-partita">
+              <div class="row justify-content-center">
+                <p class="campo-stadio" style="font-size: 80%;">Stadio Marchese del Prete, Venafro</p>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <p class="risultato" style="margin-left: 50px;">Bianchi</p>
+                </div>
+                <div class="col-3">
+                  <p class="risultato">0 - 1</p>
+                </div>
+                
+                <div class="col">
+                  <p class="risultato" style="margin-right: 50px;">Neri</p>
+                </div>
+              </div>
+                
+                <p class="marcatori">Marcatori</p>
+
+                <div class="row">
+                  <div class="col">
+                    <ul class="elenco-marcatori">
+                    </ul>
+                  </div>
+                  
+                  <div class="col">
+                    <ul class="elenco-marcatori">
+                      <li style="font-size: 80%;">Barile</li>
+                    </ul>
+                  </div>
+                </div>
+
+                
+                
+            </div>
+          </div>
+          <img src="primaedizione.JPG" class="img-fluid">
+        </div>
+        <div class="col"></div>
       </div>
-      <div class="col"></div>
+    </div>
+      
+    <div id="rowWrapper2">
+      <div class ="row" style="margin-top: 15px; margin-bottom: 15px;">
+        <div class="col"></div>
+        <div class="col-6">
+
+          <div class="risultato-partita">
+            <div class="dettagli-partita">
+              <div class="row justify-content-center">
+                <p class="campo-stadio" style="font-size: 80%;">Stadio Marchese del Prete, Venafro</p>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <p class="risultato" style="margin-left: 50px;">Bianchi</p>
+                </div>
+                <div class="col-3">
+                  <p class="risultato">2 - 3</p>
+                </div>
+                
+                <div class="col">
+                  <p class="risultato" style="margin-right: 50px;">Neri</p>
+                </div>
+              </div>
+                
+                <p class="marcatori">Marcatori</p>
+
+                <div class="row">
+                  <div class="col">
+                    <ul class="elenco-marcatori">
+                      <li  style="font-size: 80%;">Melone</li>
+                      <li  style="font-size: 80%;">Prisco</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="col">
+                    <ul class="elenco-marcatori">
+                      <li  style="font-size: 80%;">Barile (2)</li>
+                      <li  style="font-size: 80%;">Rongione</li>
+                    </ul>
+                  </div>
+                </div>
+
+                
+                
+            </div>
+          </div>
+        
+          <img src="barile.jpeg" class="img-fluid">
+        </div>
+        <div class="col"></div>
+      </div>
     </div>
 
 
